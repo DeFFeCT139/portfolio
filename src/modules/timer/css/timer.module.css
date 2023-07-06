@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+.timer{
+  width: 100%;
+  height: 100vh;
+  background-color: #222831;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timerInnerBlock{
+  padding: 15px;
+}
+.timerBlock{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px rgb(36, 36, 36);
+  max-width: 600px;
+  background-color: #393E46;
+}
+.timerNumber{
+  text-align: center;
+  font-size: 60px;
+}
+.timerSetings{
+  margin-top: 15px;
+}
+.timerBtns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.timerBtn{
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #EEEEEE;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #00ADB5;
+  background-color:#393E46 ;
+}
+.timerInputs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timerInput{
+  font-size: 24px;
+  width: 50px;
+  border: 1px solid #00ADB5;
+  background-color:#393E46 ;
+  border-radius: 5px;
+  padding: 5px;
+  color: #EEEEEE;
+  outline: none;
+  text-align: center;
+}
+.timerInput::-webkit-inner-spin-button, .timerInput::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.timerInputText{
+  font-size: 24px;
+}

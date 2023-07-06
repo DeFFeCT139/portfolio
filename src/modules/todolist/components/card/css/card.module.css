@@ -1,0 +1,27 @@
+.cardInner{
+  margin: 15px 15px 0px 0px;
+}
+.card{
+  border-radius: 10px;
+  background-color: #393E46;
+  padding: 15px;
+  text-align: center;
+}
+.cardTitle{
+  font-size: 20px;
+}
+.cardDay{
+  font-size: 14px;
+}
+.cardDeg{
+  font-size: 40px;
+}
+.cardWather{
+  font-size: 14px;
+}
+.cardImg{
+  width: 50px;
+}
+.cardImage{
+  margin-top: 10px;
+}

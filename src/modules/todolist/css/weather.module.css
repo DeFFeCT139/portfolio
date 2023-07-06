@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+.weather{
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: #222831;
+  color: #fff;
+}
+.weatherInnser{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner{
+  max-width: 565px;
+}
+.weatherDay{
+  display: flex;
+  align-items: center;
+}
+.weatherDayBlock{
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #393E46;
+}
+.weatherDayBlockInfo{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.weatherDayBlockInfoback{
+  display: flex;
+}
+.weatherDayBlockInfobackItem{
+  display: flex;
+  align-items: center;
+}
+.weatherDayBlockInfoDeg{
+  font-size: 70px;
+}
+.weatherDayBlockInfoImage{
+  width: 60px;
+}
+.weatherDayBlockInfoTextTitle{
+  font-size: 17px;
+}
+.weatherDayBlockInfoTextDesc{
+  font-size: 14px;
+}
+.weatherDayBlockInfoImg{
+  margin-left: 10px;
+}
+.weatherDayBlockInfoText{
+  margin-left: 10px;
+}
+.weatherDayBlockInfoback{
+  margin-top: 15px;
+}
+.weatherDayBlockInfobackItem{
+  margin-left: 10px;
+}
+.weatherDayBlockInfobackItemTitle{
+  font-size: 17px;
+  margin-left: 5px;
+}
+.weatherDayBlockInfobackItemImg{
+  width: 30px;
+}
+.weatherMapFrame{
+  width: 190px;
+  height: 190px;
+  border-radius: 10px;
+}
+.weatherMap{
+  width: 190px;
+  height: 190px;
+  margin-left: 15px;
+}

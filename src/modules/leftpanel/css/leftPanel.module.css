@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+}
+.leftPanel{
+  position: fixed;
+  background-color: #393E46;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  top: 15px;
+  left: 15px;
+  overflow: hidden;
+  transition: 200ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+} 
+.leftPanelIcon{
+  color: #F7E01D;
+  font-size: 24px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+.leftPanelActive{
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  padding: 15px;
+  border-radius: 0px 10px 10px 0px;
+  transition: 200ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+.leftPanelActive .leftPanelTitleText{
+  opacity: 1;
+  transition: 200ms;
+  transition-delay: 200ms;
+}
+.leftPanelActive .leftPanelContentLink{
+  opacity: 1;
+  transition: 200ms;
+  transition-delay: 200ms;
+}
+
+.leftPanelTitle{
+  display: flex;
+  transition: 200ms;
+  align-items: center;
+}
+.leftPanelTitleText{
+  opacity: 0;
+  color: #fff;
+  margin-left: 10px;
+}
+.leftPanelContent{
+  margin-top: 35px;
+}
+.leftPanelContentLink{
+  color: #fff;
+  opacity: 0;
+  text-decoration: none;
+  padding: 5px 10px ;
+  cursor: pointer;
+  margin: 5px 0px;
+  border-radius: 5px;
+  transition: 200ms;
+  display: flex;
+  align-items: center;
+}
+.leftPanelContentLink:hover{
+  background-color: #00acb525;
+  transition: 200ms;
+}
+.leftPanelContentLinkImg{
+  margin-right: 10px;
+  width: 25px;
+}
+.leftPanelContentLinkActive{
+  background-color: #00acb525;
+  transition: 200ms;
+}

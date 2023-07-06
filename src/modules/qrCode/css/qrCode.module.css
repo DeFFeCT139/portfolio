@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+.QrCode{
+  height: 100vh;
+  background-color: #222831;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.QrCodeBlcok{
+  background-color: #393E46;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.QrCodeBlcokLeft{
+  margin-right: 15px;
+}
+.QrCodeBlcokInputText{
+  font-size: 14px;
+}
+.QrCodeBlcokInputInput{
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #393E46;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+}
+.QrCodeBlcokBtn{
+  font-size: 14px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.QrCodeBlcokRight{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px dashed #5c636e;
+}
+.QrCoeImg{
+  width: 300px;
+  height: 300px;
+}
+.QrCoeImg path:nth-last-child(1n){
+  fill: #FFF;
+}
+.QrCoeImg path:nth-last-child(2n){
+  fill: #393E46;
+}
+.QrCodeBlcokRightText{
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.QrCodeBlcokRightActive{
+  border: 4px dashed #393E46;
+}
