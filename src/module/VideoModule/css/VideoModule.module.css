@@ -1,0 +1,11 @@
+.VideoModule_item{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #2b3236;
+}
+.VideoModule_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-gap: 15px;
+}

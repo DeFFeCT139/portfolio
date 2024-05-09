@@ -1,0 +1,12 @@
+.TodoListModule_item_title{
+    border-radius: 10px;
+    background-color: #2b3236;
+    text-align: center;
+    padding: 10px;
+    user-select: none;
+}
+.TodoListModule_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-gap: 15px;
+}

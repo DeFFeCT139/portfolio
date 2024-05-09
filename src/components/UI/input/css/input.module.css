@@ -1,0 +1,15 @@
+.Input_Title{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.Input > input {
+    width: max-content;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline;
+    background-color: #1E2022;
+    outline: none;
+    border: none;
+    color: #F0F5F9;
+    border-radius: 5px;
+}

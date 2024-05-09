@@ -1,0 +1,18 @@
+.LinkItem{
+    transition: 200ms;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #F0F5F9;
+    text-decoration: none;
+    display: block;
+}
+.LinkItem:hover{
+    transition: 200ms;
+    background-color: #1E2022;
+}
+
+.LinkItem_active{
+    background-color: #1E2022;
+}

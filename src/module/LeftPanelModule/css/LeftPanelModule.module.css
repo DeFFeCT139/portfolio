@@ -1,0 +1,30 @@
+.LoginModule{
+    background-color: #2b3236;
+    position: fixed;
+    top: 10px;
+    width: 235px;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 10;
+}
+.LoginModule_inner{
+    position: relative;
+    height: calc(100vh - 60px);
+}
+.LoginModule_Title{
+    font-size: 20px;
+    font-weight: 700
+}
+.LoginModule_ListLink{
+    margin-top: 20px;
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #52616B;
+}
+.LoginModule_Button{
+    margin-top: 20px;
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #52616B;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
