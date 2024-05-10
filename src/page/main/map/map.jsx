@@ -4,7 +4,7 @@ import MapModule from "../../../module/MapModule/MapModule";
 
 const Map = () => {
     return (
-      <div className="Video">
+      <div className="Map">
         
         <MapModule/>
       </div>

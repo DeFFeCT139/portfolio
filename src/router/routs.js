@@ -1,4 +1,5 @@
 import { lazy } from "react"
+import Weather from "../page/main/weather/weather"
 
 const Home = lazy(()=> import("../page/main/home/home"))
 const Video = lazy(()=> import("../page/main/video/video"))
@@ -13,7 +14,7 @@ export const privatRouts = [
     {path: '/todolist', comment: <TodoList/>, name:'Todolist'},
     {path: '/map', comment: <Map/>, name:'Map'},
     {path: '/tovarfilter', comment: <Home/>, name:'Tovar Filter'},
-    {path: '/weather', comment: <Home/>, name:'Weather'},
+    {path: '/weather', comment: <Weather/>, name:'Weather'},
 ]
 
 export const openRouts = [
