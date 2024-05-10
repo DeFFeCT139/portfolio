@@ -13,7 +13,7 @@ export const privatRouts = [
     {path: '/video', comment: <Video/>, name:'Video'},
     {path: '/todolist', comment: <TodoList/>, name:'Todolist'},
     {path: '/map', comment: <Map/>, name:'Map'},
-    {path: '/tovarfilter', comment: <Home/>, name:'Tovar Filter'},
+    {path: '/tovarfilter', comment: <Home/>, name:'Films'},
     {path: '/weather', comment: <Weather/>, name:'Weather'},
 ]
 

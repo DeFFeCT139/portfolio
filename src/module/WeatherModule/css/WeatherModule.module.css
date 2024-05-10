@@ -1,51 +1,72 @@
-.TodoListModule_item_title{
-    border-radius: 5px;
-    background-color: #2b3236;
-    text-align: center;
-    padding: 10px;
-    user-select: none;
-}
-.TodoListModule_list{
+.WeatherModule_content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
-.TodoListModule_item_item{
-    margin-top: 15px;
+.WeatherAll{
+    grid-column-start: 1;
     background-color: #2b3236;
-    border-radius: 5px;
-    padding: 10px;
-}
-.TodoListModule_item_item_title{
-    font-size: 19px;
-    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px;
     display: flex;
-    column-gap: 10px;
     justify-content: space-between;
-    width: 100%;
+}
+.Weather5{
+    grid-column-start: 1;
+}
+.WeatherMap{
+    grid-column-start: 0;
+}
+.WeatherAllTemp{
+    display: flex;
     align-items: center;
 }
-.TodoListModule_item_item_desc{
-    margin-top: 10px;
-    padding-top: 10px;
-    font-size: 14px;
-    border-top: 1px solid #52616B;
+.WeatherAllTemp img{
+    width: 110px;
 }
-.TodoListModule_add{
-    margin-top: 15px;
+.WeatherAllTemp_item{
+    font-size: 90px;
 }
-.TodoListModule_item_item_title svg{
-    opacity: 0;
-    transition: 100ms;
-    cursor: pointer;
+.WeatherAll_name{
+    font-size: 18px;
+    font-weight: 700;
 }
-.TodoListModule_item_item:hover svg{
-    transition: 100ms;
-    opacity: 1;
+.WeatherAll_desc{
+    margin-top: 12px;
+    font-size: 15px;
 }
-.TodoListModule_item_item_title > img{
-    cursor: pointer;
+.WeatherAll_vis{
+    font-size: 15px;
 }
-.TodoListModule_item{
-    height: calc(100vh - 20px);
+.WeatherAll_wind{
+    font-size: 15px;
+}
+.WeatherAll_clouds{
+    font-size: 15px;
+}
+.WeatherAll_hum{
+    font-size: 15px;
+}
+.Weather5_list{
+    display: flex;
+    gap: 10px;
+}
+.Weather5_item{
+    background-color: #2b3236;
+    border-radius: 10px;
+    padding: 15px;
+}
+.Weather5_item_dw{
+    font-size: 22px;
+    font-weight: 700;
+}
+.Weather5_item_d{
+    font-size: 12px;
+}
+.Weather5_item_t{
+    font-size: 40px;
+    font-weight: 700;
+}
+.Weather5_item_desc{
+    font-size: 12px;
 }
