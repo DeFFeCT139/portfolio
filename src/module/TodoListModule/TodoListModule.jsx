@@ -3,12 +3,13 @@ import style from './css/TodoListModule.module.css'
 import { getDatabase, ref, onValue, set } from "firebase/database";
 import Addblock from './component/addblock/addblock';
 import Card from './component/card/card';
+import Loader from '../../components/UI/loader/loader';
 
 
 
 const TodoListModule = () => {
 
-  const [list, setList] = useState([])
+  const [list, setList] = useState(null)
   const [curentBoard, setCurentBoard] = useState(null)
   const [curentCard, setCurentCard] = useState(null)
 
@@ -79,30 +80,33 @@ const TodoListModule = () => {
     return (
       <div className={style.TodoListModule}>
         <div className="container">
-          <div className={style.TodoListModule_list}>
-            {list.map(item => 
-              <div  
-                onDragOver={(e) => dragOverHandler(e)}
-                onDrop={(e) => dropCardHandler(e, item)}
-                key={item.id} 
-                className={style.TodoListModule_item}>
-                <div className={style.TodoListModule_item_title}>{item.title}</div>
-                {item.item && item.item.map(item2 => 
-                  <Card
-                    onDragOver={(e) => dragOverHandler(e)}
-                    onDragStart={(e) => dragStartHandler(e, item, item2)}
-                    onDrop={(e) => dropHandler(e, item, item2)}
-                    key={item.item.indexOf(item2)} 
-                    list={list} 
-                    style={style} 
-                    item={item} 
-                    item2={item2}
-                  />
-                )}
-                <Addblock id={item.id - 1} list={list} style={style}/>
-              </div>
-            )}
-          </div>
+          {list?
+            <div className={style.TodoListModule_list}>
+              {list.map(item => 
+                <div  
+                  onDragOver={(e) => dragOverHandler(e)}
+                  onDrop={(e) => dropCardHandler(e, item)}
+                  key={item.id} 
+                  className={style.TodoListModule_item}>
+                  <div className={style.TodoListModule_item_title}>{item.title}</div>
+                  {item.item && item.item.map(item2 => 
+                    <Card
+                      onDragOver={(e) => dragOverHandler(e)}
+                      onDragStart={(e) => dragStartHandler(e, item, item2)}
+                      onDrop={(e) => dropHandler(e, item, item2)}
+                      key={item.item.indexOf(item2)} 
+                      list={list} 
+                      style={style} 
+                      item={item} 
+                      item2={item2}
+                    />
+                  )}
+                  <Addblock id={item.id - 1} list={list} style={style}/>
+                </div>
+              )}
+            </div>:
+            <Loader/>
+          }
         </div>
       </div>
     );

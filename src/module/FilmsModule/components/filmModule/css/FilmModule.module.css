@@ -1,0 +1,19 @@
+.FilmModule_top{
+    display: flex;
+    gap: 15px;
+}
+.FilmModule_left > div{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: calc();
+}
+.FilmModule_right_reiting{
+    display: flex;
+    gap: 5px;
+}
+.FilmModule_right_reiting > div{
+    display: flex;
+    gap: 5px;
+}

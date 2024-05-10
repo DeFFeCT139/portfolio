@@ -23,7 +23,11 @@ const LeftPanelModule = () => {
           <div className={style.LoginModule_Title}>Dashboard</div>
           <div className={style.LoginModule_ListLink}>
             {privatRouts.map(item => 
-              <LinkItem key={privatRouts.indexOf(item)} active={location.pathname === item.path? true: false} link={item.path} name={item.name}/>
+              <div key={privatRouts.indexOf(item)} className="">
+                {item.stateLP&&
+                  <LinkItem active={location.pathname === item.path? true: false} link={item.path} name={item.name}/>
+                }
+              </div>
             )}
           </div>
           <div className={style.LoginModule_Button}>
