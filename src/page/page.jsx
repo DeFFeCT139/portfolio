@@ -27,7 +27,7 @@ const Page = () => {
               {openRouts.map(item => 
                   <Route key={openRouts.indexOf(item)} path={item.path} element={item.comment}/>
               )}
-              <Route path="*" element={<Error404 state={false}/>}/>
+              <Route path="/*" element={<Error404 state={false}/>}/>
             </Routes>
         }
       </div>
