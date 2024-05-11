@@ -10,7 +10,9 @@ const getWeather5 = async () => {
 const Weather5 = ({style}) => {
 
     const listW = ['Вс','Пн','Вт','Ср','Чт','Пт','Сб']
-    const data = useQuery('data5', getWeather5)
+    const data = useQuery('data5', getWeather5, {
+      refetchOnWindowFocus: false
+    })
 
       return (
         <div className={style.Weather5}>

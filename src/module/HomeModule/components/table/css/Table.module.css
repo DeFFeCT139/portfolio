@@ -1,0 +1,35 @@
+.Table > table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+td > img {
+    width: 20px;
+}
+th{
+    text-align: start;
+    border: none;
+    background-color: #2b3236;
+}
+tr{
+    background-color: #1E2022;
+    border-top: 5px solid #2b3236;
+    border-radius: 5px;
+}
+td{
+    border: none;
+    padding: 3px;
+}
+.Table > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Table > div > div {
+    background-color: #1E2022;
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}

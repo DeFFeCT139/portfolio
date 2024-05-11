@@ -19,7 +19,9 @@ const getFilmsModule = async (id) => {
 
 const FilmModule = () => {
   const item = useParams()
-  const  {data, isLoading} = useQuery('dataFilm', () => getFilmsModule(item.id))
+  const  {data, isLoading} = useQuery('dataFilm', () => getFilmsModule(item.id), {
+    refetchOnWindowFocus: false
+  })
 
     return (
       <div className={style.FilmModule}>

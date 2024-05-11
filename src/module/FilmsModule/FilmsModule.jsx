@@ -19,7 +19,9 @@ const getFilmsModule = async () => {
 
 const FilmsModule = () => {
 
-  const {data, isLoading} = useQuery('dataFilms', getFilmsModule)
+  const {data, isLoading} = useQuery('dataFilms', getFilmsModule, {
+    refetchOnWindowFocus: false
+  })
 
     return (
       <div className={style.FilmsModule}>
