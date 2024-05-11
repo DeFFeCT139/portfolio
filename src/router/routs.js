@@ -8,10 +8,11 @@ const Map = lazy(()=> import("../page/main/map/map"))
 const Weather = lazy(()=> import("../page/main/weather/weather"))
 const Films = lazy(()=> import("../page/main/films/films"))
 const Film = lazy(()=> import("../page/main/films/film/film"))
+const Converters = lazy(()=> import("../page/main/converters/converters"))
 
 export const privatRouts = [
     {path: '/', stateLP: true, comment: <Home/>, name:'Home'},
-    {path: '/converters', stateLP: true, comment: <Home/>, name:'Converters'},
+    {path: '/converters', stateLP: true, comment: <Converters/>, name:'Converters'},
     {path: '/video', stateLP: true, comment: <Video/>, name:'Video'},
     {path: '/todolist', stateLP: true, comment: <TodoList/>, name:'Todolist'},
     {path: '/map', stateLP: true, comment: <Map/>, name:'Map'},

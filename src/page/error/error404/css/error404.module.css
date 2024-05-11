@@ -1,0 +1,25 @@
+.Error_inner{
+    width: 100%;
+    height: calc(100vh - 20px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.Error_inner a {
+    color: #F0F5F9;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+}
+.Error_content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Error_content > div{
+    font-size: 150px;
+    font-weight: 700;
+}
+.Error_content > img{
+    width: 200px;
+}

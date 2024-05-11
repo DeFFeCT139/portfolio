@@ -3,6 +3,7 @@ import { privatRouts, openRouts } from "../router/routs";
 import { useSelector } from "react-redux";
 import LeftPanelModule from "../module/LeftPanelModule/LeftPanelModule";
 import { Suspense } from "react";
+import Error404 from "./error/error404/error";
 
 const Page = () => {
 
@@ -18,7 +19,7 @@ const Page = () => {
                   {privatRouts.map(item => 
                       <Route key={privatRouts.indexOf(item)} path={item.path} element={item.comment}/>
                   )}
-                  <Route path="*" element={<Navigate to="/" replace />}/>
+                  <Route path="*" element={<Error404 state={true}/>}/>
                 </Routes>
               </Suspense>
             </div>:
@@ -26,7 +27,7 @@ const Page = () => {
               {openRouts.map(item => 
                   <Route key={openRouts.indexOf(item)} path={item.path} element={item.comment}/>
               )}
-              <Route path="*" element={<Navigate to="/" replace />}/>
+              <Route path="*" element={<Error404 state={false}/>}/>
             </Routes>
         }
       </div>
