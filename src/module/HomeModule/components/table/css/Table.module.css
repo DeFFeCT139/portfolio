@@ -12,7 +12,7 @@ th{
     background-color: #2b3236;
 }
 tr{
-    background-color: #1E2022;
+
     border-top: 5px solid #2b3236;
     border-radius: 5px;
 }
@@ -26,7 +26,6 @@ td{
     margin-top: 10px;
 }
 .Table > div > div {
-    background-color: #1E2022;
     border: none;
     outline: none;
     padding: 5px;
