@@ -27,7 +27,7 @@ const News = () => {
                 {data.result.map(item => 
                     <a key={data.result.indexOf(item)} href={item.link}>
                         <div className="">
-                            <img src={item.imgUrl} alt="" />
+                        <div style={{backgroundImage: `url("${item.imgUrl}")`}} className={style.News_img}></div>
                         </div>
                         <div className="">
                             <h3 className="">{item.title}</h3>

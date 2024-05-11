@@ -26,5 +26,6 @@
 .HomeModule_inner_bottom{
     grid-column-start: 1;
     grid-column-end: 5;
+    padding: 0 !important;
     background-color: #1E2022 !important;
 }
