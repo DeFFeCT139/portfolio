@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import style from './css/MapModule.module.css'
-import cast from './castam.json'
-
 
 const MapModule = () => {
 

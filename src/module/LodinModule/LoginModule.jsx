@@ -21,8 +21,8 @@ const LoginModule = () => {
       <div className={style.LoginModule}>
             <div className={style.LoginModule_inner}>
                 <span>LoginBar</span>
-                <Input id={'login'} title={'Login'} type={'text'}/>
-                <Input id={'password'} title={'Password'} type={'password'}/>
+                <Input value={'admin'} id={'login'} title={'Login'} type={'text'}/>
+                <Input value={'admin'} id={'password'} title={'Password'} type={'password'}/>
                 <Button onClick={login} title={'Login'}/>
             </div> 
       </div>
