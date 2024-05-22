@@ -13,3 +13,9 @@ body{
 .ymaps3x0--map-copyrights{
     display: none !important;
 }
+@media (max-width: 1100px) {
+    .container{
+        width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+}

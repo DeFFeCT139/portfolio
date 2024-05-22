@@ -66,7 +66,7 @@ function LineGrafic() {
   
   
     return (
-        <Line options={options} data={data2}/>
+        <Line style={{width: '100%', height: '100%'}} options={options} data={data2}/>
     );
   }
   

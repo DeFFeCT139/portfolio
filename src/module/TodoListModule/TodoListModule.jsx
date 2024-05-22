@@ -36,7 +36,6 @@ const TodoListModule = () => {
 
   const dropHandler = (e, board, card) =>{
     e.preventDefault()
-    if (board.item.indexOf(curentCard) === -1) {
       const currentIndex = curentBoard.item.indexOf(curentCard)
       curentBoard.item.splice(currentIndex, 1)
       const boardIndex = board.item.indexOf(card)
@@ -47,10 +46,11 @@ const TodoListModule = () => {
         if (b.id === curentBoard.id) return curentBoard
         return b
       }));
-    }
+    
   }
 
   const dropCardHandler = (e, board) =>{
+    e.preventDefault()
     if (board.item === undefined) {
       board.item = [curentCard]
       const currentIndex = curentBoard.item.indexOf(curentCard)
